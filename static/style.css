@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+    --bg: #0b1020;
+    --panel: #121b30;
+    --panel2: #18243b;
+    --purple: #a78bfa;
+    --cyan: #67e8f9;
+    --muted: #94a3b8;
+    --white: #f8fafc;
+}
+
+.stApp {
+    background:
+        radial-gradient(ellipse at 80% 0%, #7046be30, transparent 35%),
+        radial-gradient(ellipse at 0% 50%, #087e9a18, transparent 35%),
+        var(--bg);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+}
+
+[data-testid="stHeader"] {
+    background: transparent;
+}
+
+.block-container {
+    max-width: 1450px;
+    padding: 2rem 3rem 3rem;
+}
+
+section[data-testid="stSidebar"] {
+    background: #10182a;
+    border-right: 1px solid #ffffff12;
+}
+
+section[data-testid="stSidebar"] > div {
+    padding-top: 2rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Space Grotesk', sans-serif !important;
+    color: var(--white) !important;
+}
+
+h1 {
+    font-size: clamp(2.3rem, 5vw, 3.6rem) !important;
+    letter-spacing: -2px;
+}
+
+h2 {
+    font-size: 1.65rem !important;
+}
+
+p, li {
+    color: #c2cce0;
+}
+
+.brand {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.brand span {
+    color: var(--purple);
+}
+
+.sidebar-caption {
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.hero-tag {
+    color: var(--cyan);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero-description {
+    color: var(--muted);
+    line-height: 1.8;
+    max-width: 650px;
+}
+
+.stRadio > label {
+    color: var(--muted) !important;
+}
+
+.stRadio div[role="radiogroup"] {
+    gap: 12px;
+}
+
+.stRadio label {
+    color: #dce4f5 !important;
+}
+
+[data-testid="stFileUploader"] {
+    background: #a78bfa0c;
+    border: 1px dashed #a78bfa88;
+    border-radius: 18px;
+    padding: 16px;
+}
+
+[data-testid="stFileUploader"] section {
+    border: none;
+}
+
+[data-testid="stImage"] img {
+    border-radius: 16px;
+    border: 1px solid #ffffff20;
+}
+
+.stButton > button {
+    border-radius: 12px;
+    min-height: 46px;
+    font-weight: 700;
+    transition: all .2s ease;
+}
+
+.stButton > button[kind="primary"] {
+    background: linear-gradient(110deg, #7c3aed, #4f46e5) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    border-color: var(--purple);
+    box-shadow: 0 8px 25px #7c3aed35;
+}
+
+[data-testid="stMetric"] {
+    background: linear-gradient(145deg, #18243b, #111a2c);
+    padding: 20px;
+    border: 1px solid #ffffff18;
+    border-radius: 16px;
+}
+
+[data-testid="stMetricLabel"] {
+    color: var(--muted);
+}
+
+[data-testid="stMetricValue"] {
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+hr {
+    border-color: #ffffff18 !important;
+}
+
+[data-testid="stProgressBar"] > div {
+    background: #26344d;
+    border-radius: 20px;
+}
+
+[data-testid="stProgressBar"] > div > div {
+    background: linear-gradient(90deg, #8b5cf6, #67e8f9);
+    border-radius: 20px;
+}
+
+div[data-testid="stAlert"] {
+    border-radius: 12px;
+}
+
+.footer-text {
+    text-align: center;
+    color: #71809e;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+}
+
+.copy-frame {
+    width: 100%;
+    height: 65px;
+    border: 0;
+}
+
+@media(max-width: 768px) {
+    .block-container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2.3rem !important;
+    }
+}
